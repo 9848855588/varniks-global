@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varniks Global — Intelligent Automation & IT Solutions</title>
+<meta name="description" content="Varniks Global builds AI-powered automation products like LocalBot and MeterBot, and delivers IT consulting and custom software development for businesses.">
+<link rel="canonical" href="https://varniksglobal.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231E7A74'/%3E%3Ctext x='50' y='71' font-size='62' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Varniks Global">
+<meta property="og:title" content="Varniks Global — Intelligent Automation & IT Solutions">
+<meta property="og:description" content="AI-powered automation products (LocalBot, MeterBot) plus IT consulting and custom software development.">
+<meta property="og:url" content="https://varniksglobal.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Varniks Global — Intelligent Automation & IT Solutions">
+<meta name="twitter:description" content="AI-powered automation products plus IT consulting and custom software development.">
+<script>document.documentElement.className+=' js';</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Varniks Global",
+  "url":"https://varniksglobal.com/",
+  "email":"hello@varniksglobal.com",
+  "telephone":"+91-81429-19919",
+  "vatID":"36ABAFV1261F1ZF",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"#405, Level 4, My Space Weave, S.No. 322(P), Puppalaguda, Financial District",
+    "addressLocality":"Hyderabad",
+    "addressRegion":"Telangana",
+    "postalCode":"500089",
+    "addressCountry":"IN"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#1E7A74;
+    --teal-d:#144F4B;
+    --teal-ink:#1A2E2D;
+    --orange:#F05A1A;
+    --orange-2:#F47235;
+    --ink:#1A2E2D;
+    --muted:#6B7C7B;
+    --tint-teal:#E6F5F4;
+    --tint-orange:#FFF0EB;
+    --cream:#FBF7F3;
+    --line:#e7ece9;
+    --white:#ffffff;
+    --radius:20px;
+    --maxw:1160px;
+    --shadow:0 24px 60px -30px rgba(20,79,75,.4);
+    --shadow-sm:0 10px 30px -16px rgba(26,46,45,.35);
+    --font:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font);color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.78rem;font-weight:600;letter-spacing:.04em;color:var(--orange);padding:8px 15px;border:1px solid rgba(240,90,26,.3);border-radius:999px;background:var(--tint-orange)}
+  .eyebrow.on-dark{color:var(--orange-2);background:rgba(244,114,53,.12);border-color:rgba(244,114,53,.35)}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange)}
+  h1,h2,h3,h4{line-height:1.12;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:inherit;font-weight:700;font-size:.98rem;padding:13px 26px;border-radius:12px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, box-shadow .2s ease, background .2s ease;white-space:nowrap}
+  .btn-primary{background:var(--orange);color:#fff;box-shadow:0 12px 26px -12px rgba(240,90,26,.7)}
+  .btn-primary:hover{transform:translateY(-2px);background:#e0500f;box-shadow:0 18px 34px -14px rgba(240,90,26,.8)}
+  .btn-teal{background:var(--teal);color:#fff}
+  .btn-teal:hover{transform:translateY(-2px);background:var(--teal-d)}
+  .btn-outline{background:transparent;border-color:var(--teal);color:var(--teal);font-weight:700}
+  .btn-outline:hover{background:var(--teal);color:#fff;transform:translateY(-2px)}
+  .btn-ghost-dark{background:#fff;color:var(--teal-ink);border-color:#fff}
+  .btn-ghost-dark:hover{transform:translateY(-2px);background:#f1f1f1}
+
+  /* NAV */
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(251,247,243,.9);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
+  .logo .mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--teal),var(--teal-d));display:grid;place-items:center;font-weight:900;color:#fff;font-size:1.2rem;box-shadow:0 8px 20px -8px rgba(30,122,116,.7)}
+  .logo b{color:var(--ink);font-weight:800}
+  .logo .g{color:var(--orange);font-weight:800}
+  .logo small{display:block;font-size:.6rem;font-weight:600;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-top:-2px}
+  nav.links{display:flex;align-items:center;gap:32px}
+  nav.links a{font-size:.95rem;color:var(--teal-ink);font-weight:500;transition:color .2s}
+  nav.links a:hover{color:var(--orange)}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer}
+  .menu-btn span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px}
+
+  /* HERO (dark teal) */
+  .hero{background:var(--teal-ink);color:#fff;position:relative;overflow:hidden;padding:92px 0 88px}
+  .hero:before{content:"";position:absolute;width:680px;height:680px;border-radius:50%;right:-160px;top:-220px;background:radial-gradient(circle,rgba(30,122,116,.5),transparent 62%);pointer-events:none}
+  .hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;left:-180px;bottom:-240px;background:radial-gradient(circle,rgba(244,114,53,.18),transparent 62%);pointer-events:none}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);color:#fff;margin:22px 0 20px;font-weight:900}
+  .hero h1 .o{color:var(--orange-2)}
+  .hero p.lead{font-size:1.15rem;color:rgba(255,255,255,.8);max-width:560px;margin-bottom:32px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-stats{display:flex;gap:36px;margin-top:46px;flex-wrap:wrap}
+  .hero-stats .s .n{font-size:1.6rem;font-weight:800;color:var(--orange-2)}
+  .hero-stats .s .l{font-size:.82rem;color:rgba(255,255,255,.65)}
+
+  /* HERO app card */
+  .phone{background:#12211f;border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:16px;box-shadow:var(--shadow);position:relative}
+  .phone .bar{display:flex;justify-content:space-between;font-size:.72rem;color:rgba(255,255,255,.55);padding:2px 6px 12px}
+  .app-head{background:linear-gradient(135deg,var(--teal),var(--teal-d));border-radius:16px;padding:16px;color:#fff;margin-bottom:12px}
+  .app-head .t{font-weight:800;font-size:1.05rem}
+  .app-head .t span{color:var(--orange-2)}
+  .app-head .sub{font-size:.82rem;color:rgba(255,255,255,.8)}
+  .app-card{background:#fff;border-radius:14px;padding:14px;margin-bottom:10px;color:var(--ink)}
+  .app-card .row1{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+  .app-card .row1 b{font-size:.95rem}
+  .pill{font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:999px}
+  .pill.active{background:var(--tint-teal);color:var(--teal-d)}
+  .pill.paused{background:var(--tint-orange);color:var(--orange)}
+  .app-card .meta{font-size:.78rem;color:var(--muted)}
+  .stats2{display:flex;gap:8px;margin-top:10px}
+  .stats2 .st{flex:1;background:var(--tint-teal);border-radius:10px;padding:9px;text-align:center}
+  .stats2 .st .v{font-weight:800;color:var(--teal-d);font-size:1.05rem}
+  .stats2 .st .k{font-size:.66rem;color:var(--muted)}
+  .wa{background:#25D366;color:#062b12;border-radius:12px;padding:11px 13px;font-size:.82rem;font-weight:700;display:flex;align-items:center;gap:9px}
+  .wa .tick{color:#043; font-variant-numeric:tabular-nums}
+
+  /* SECTIONS */
+  section{padding:90px 0;position:relative}
+  .sec-cream{background:var(--cream)}
+  .sec-tint{background:var(--tint-teal)}
+  .sec-head{text-align:center;max-width:700px;margin:0 auto 56px}
+  .sec-head h2{font-size:clamp(1.9rem,3.7vw,2.8rem);margin:18px 0 14px;font-weight:800}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+
+  /* PRODUCTS */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:transform .2s ease, box-shadow .2s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-sm)}
+  .card .ic{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:1.5rem;margin-bottom:20px}
+  .ic.teal{background:var(--tint-teal)}
+  .ic.orange{background:var(--tint-orange)}
+  .card h3{font-size:1.32rem;margin-bottom:5px}
+  .card .tag{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-bottom:14px;display:inline-block}
+  .card p{color:var(--muted);font-size:.96rem;margin-bottom:18px}
+  .card ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .card ul li{font-size:.9rem;color:var(--teal-ink);display:flex;gap:10px;align-items:flex-start}
+  .card ul li:before{content:"✓";color:var(--teal);font-weight:800;flex:0 0 auto}
+  .badge-soon{position:absolute;top:18px;right:18px;font-size:.66rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--orange);border:1px solid rgba(240,90,26,.35);background:var(--tint-orange);padding:4px 10px;border-radius:999px}
+
+  /* SERVICES */
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;transition:transform .2s, box-shadow .2s}
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+  .svc .n{font-size:.8rem;color:var(--teal);font-weight:800;margin-bottom:14px}
+  .svc h3{font-size:1.06rem;margin-bottom:8px}
+  .svc p{font-size:.88rem;color:var(--muted)}
+
+  /* CASE STUDY */
+  .case{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:26px;padding:46px;box-shadow:var(--shadow-sm)}
+  .case .tagline{color:var(--orange);font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+  .case h3{font-size:clamp(1.5rem,2.8vw,2rem);margin-bottom:14px}
+  .case p{color:var(--muted);margin-bottom:16px;font-size:1rem}
+  .case .q{border-left:3px solid var(--teal);padding:8px 0 8px 16px;color:var(--teal-ink);font-style:italic;font-size:1.02rem;margin:6px 0 4px}
+  .case .q cite{display:block;font-style:normal;font-size:.82rem;color:var(--muted);margin-top:8px}
+  .metrics{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .metric{background:var(--tint-teal);border-radius:16px;padding:24px 20px;text-align:center}
+  .metric:nth-child(2),.metric:nth-child(3){background:var(--tint-orange)}
+  .metric .v{font-size:2.1rem;font-weight:900;color:var(--teal-d);line-height:1}
+  .metric:nth-child(2) .v,.metric:nth-child(3) .v{color:var(--orange)}
+  .metric .k{font-size:.82rem;color:var(--muted);margin-top:8px}
+  .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .stack span{font-size:.76rem;background:var(--cream);border:1px solid var(--line);color:var(--teal-ink);padding:5px 11px;border-radius:999px;font-weight:600}
+
+  /* WHY strip */
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .strip .b{text-align:center;padding:28px 16px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+  .strip .b .n{font-size:1.4rem;font-weight:800;color:var(--teal)}
+  .strip .b .l{font-size:.86rem;color:var(--muted);margin-top:8px}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .about-grid h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin:16px 0 18px}
+  .about-grid p{color:var(--muted);margin-bottom:16px;font-size:1.03rem}
+  .val-list{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .val{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+  .val h4{font-size:1rem;margin-bottom:5px;color:var(--teal-d)}
+  .val p{font-size:.86rem;color:var(--muted);margin:0}
+
+  /* CONTACT */
+  .contact-card{background:var(--teal-ink);color:#fff;border-radius:26px;padding:52px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;position:relative;overflow:hidden}
+  .contact-card:before{content:"";position:absolute;width:400px;height:400px;border-radius:50%;right:-140px;bottom:-160px;background:radial-gradient(circle,rgba(30,122,116,.45),transparent 62%)}
+  .contact-card h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.3rem);margin-bottom:14px;position:relative}
+  .contact-card>div>p.sub{color:rgba(255,255,255,.78);margin-bottom:26px;position:relative}
+  .cinfo{display:flex;flex-direction:column;gap:16px;position:relative}
+  .cinfo a,.cinfo .ci{display:flex;align-items:flex-start;gap:14px;color:#fff;font-size:.98rem}
+  .cinfo .ci-ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(244,114,53,.16);border:1px solid rgba(244,114,53,.35);font-size:1.1rem;flex:0 0 auto}
+  .cinfo .ci-l{font-size:.72rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em}
+  .cinfo .ci-v{color:#fff;line-height:1.45}
+  form{position:relative}
+  form .field{margin-bottom:16px}
+  form label{display:block;font-size:.8rem;color:rgba(255,255,255,.75);margin-bottom:7px;font-weight:600}
+  form input,form textarea{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:11px;padding:12px 14px;color:#fff;font-family:inherit;font-size:.95rem;transition:border-color .2s,background .2s}
+  form input::placeholder,form textarea::placeholder{color:rgba(255,255,255,.45)}
+  form input:focus,form textarea:focus{outline:none;border-color:var(--orange-2);background:rgba(255,255,255,.12)}
+  form textarea{resize:vertical;min-height:104px}
+  .form-note{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:10px}
+
+  /* FOOTER */
+  footer{background:#12211f;color:#fff;padding:56px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:36px;margin-bottom:34px}
+  .foot-grid h5{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.55);margin-bottom:16px}
+  .foot-grid a{display:block;color:rgba(255,255,255,.78);font-size:.92rem;margin-bottom:10px;transition:color .2s}
+  .foot-grid a:hover{color:var(--orange-2)}
+  .foot-about p{color:rgba(255,255,255,.7);font-size:.92rem;margin-top:14px;max-width:280px}
+  .foot-about .addr{font-size:.86rem;color:rgba(255,255,255,.65);margin-top:14px;line-height:1.6}
+  .foot-about .gst{font-size:.82rem;color:var(--orange-2);margin-top:10px;font-weight:600}
+  .logo.on-dark b,.logo.on-dark{color:#fff}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.55);font-size:.85rem;flex-wrap:wrap;gap:12px}
+  .placeholder{color:var(--orange-2);font-style:italic}
+
+  .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:960px){
+    .hero-grid,.about-grid,.case{grid-template-columns:1fr;gap:40px}
+    .cards,.svc-grid,.strip,.foot-grid,.contact-card,.val-list{grid-template-columns:1fr 1fr}
+    .contact-card{padding:34px}
+  }
+  @media(max-width:720px){
+    nav.links,.nav-cta .btn{display:none}
+    .menu-btn{display:block}
+    .cards,.svc-grid,.strip,.foot-grid,.contact-card,.val-list,.metrics{grid-template-columns:1fr}
+    .hero{padding:58px 0 54px}
+    section{padding:64px 0}
+    .mobile-open nav.links{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:var(--cream);padding:20px 24px;gap:18px;border-bottom:1px solid var(--line)}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">
+            <span><b>Varniks</b> <span class="g">Global</span><small>Automation · IT · Cloud</small></span>
+    </a>
+    <nav class="links" id="navlinks">
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#case">Case Study</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal in">
+      <span class="eyebrow on-dark"><span class="dot"></span>Intelligent automation, delivered</span>
+      <h1>Smart bots and software that <span class="o">run your business</span> for you.</h1>
+      <p class="lead">Varniks Global builds AI-powered automation products and custom software for growing businesses — from local-service assistants to precise, per-minute billing engines — backed by end-to-end IT consulting and development.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">Explore our products →</a>
+        <a href="#contact" class="btn btn-ghost-dark">Talk to us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><div class="n">2</div><div class="l">flagship products</div></div>
+        <div class="s"><div class="n">End-to-end</div><div class="l">IT consulting</div></div>
+        <div class="s"><div class="n">Cloud-native</div><div class="l">architecture</div></div>
+      </div>
+    </div>
+
+    <div class="reveal in phone" aria-hidden="true">
+      <div class="bar"><span>9:41</span><span>●●● 100%</span></div>
+      <div class="app-head">
+        <div class="t">Meter<span>BOT</span></div>
+        <div class="sub">Fair billing, live · Good morning 👋</div>
+      </div>
+      <div class="app-card">
+        <div class="row1"><b>⏱️ Trip in progress</b><span class="pill active">Demo</span></div>
+        <div class="meta">₹1,000/hr · first hour minimum, then per-minute</div>
+        <div class="stats2">
+          <div class="st"><div class="v" id="worked">1h 00m</div><div class="k">worked</div></div>
+          <div class="st"><div class="v tick" id="tick">₹1,000</div><div class="k">billed so far</div></div>
+        </div>
+      </div>
+      <div class="app-card">
+        <div class="row1"><b>🚜 Ramesh · JCB</b><span class="pill paused">Receipt</span></div>
+        <div class="meta">Worked: 1h 20m · Billed: ₹1,333 (₹1,000/hr)</div>
+        <div class="meta" style="margin-top:4px">పని: 1గం 20ని · బిల్లు: ₹1,333</div>
+      </div>
+      <div class="wa">💬 Fair, transparent billing — no surprise jumps</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>Our products</span>
+      <h2>Automation built for the real world</h2>
+      <p>Purpose-built assistants that handle the repetitive, get the numbers right, and speak your customers' language.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="ic teal">📍</div>
+        <span class="tag">LocalBot</span>
+        <h3>LocalBot</h3>
+        <p>A hyperlocal vendor platform that gives your neighbourhood milk, water and newspaper vendors a digital backbone — manage daily subscriptions with a single WhatsApp message.</p>
+        <ul>
+          <li>Subscriptions &amp; deliveries over WhatsApp</li>
+          <li>Pause, resume &amp; manage in one tap</li>
+          <li>Multilingual, built for local markets</li>
+          <li>Vendor dashboards &amp; smart delivery</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <div class="ic orange">⏱️</div>
+        <span class="tag">MeterBot</span>
+        <h3>MeterBot</h3>
+        <p>A metered-billing engine for time-based services. Fair, transparent pricing — the first hour is fixed, and every minute after is billed pro-rata, live.</p>
+        <ul>
+          <li>Per-minute pro-rata billing after a minimum</li>
+          <li>Live "Billed so far" meter — no surprise jumps</li>
+          <li>Clear receipts, with Telugu &amp; regional language</li>
+          <li>Owner-configurable rates &amp; rounding</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <span class="badge-soon">More soon</span>
+        <div class="ic teal">✨</div>
+        <span class="tag">The Bot Suite</span>
+        <h3>And more on the way</h3>
+        <p>We're expanding the Varniks bot family for new industries and workflows. Have a process worth automating? Let's build it together.</p>
+        <ul>
+          <li>Custom bots for your workflow</li>
+          <li>Industry-specific automation</li>
+          <li>Built on shared, proven foundations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec-cream">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>IT consulting &amp; development</span>
+      <h2>Your technology partner, end to end</h2>
+      <p>Beyond our products, we help businesses design, build, and run the software that powers them.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><h3>Custom Software Development</h3><p>Web, mobile, and backend systems built to fit your business — from MVP to production scale.</p></div>
+      <div class="svc reveal"><h3>AI &amp; Automation</h3><p>Chatbots, workflow automation, and AI integrations that cut manual work and speed up operations.</p></div>
+      <div class="svc reveal"><h3>Cloud &amp; DevOps</h3><p>Cloud-native architecture, deployment pipelines, and reliable, scalable infrastructure.</p></div>
+      <div class="svc reveal"><h3>IT Consulting</h3><p>Strategy, architecture reviews, and technology roadmaps to help you make the right calls.</p></div>
+      <div class="svc reveal"><h3>Product Engineering</h3><p>Full product teams — design, build, test, and iterate — as an extension of yours.</p></div>
+      <div class="svc reveal"><h3>Systems Integration</h3><p>Connect the tools you already use — payments, messaging, CRMs, and internal systems.</p></div>
+      <div class="svc reveal"><h3>Data &amp; Analytics</h3><p>Turn operational data into dashboards and insights that drive better decisions.</p></div>
+      <div class="svc reveal"><h3>Support &amp; Maintenance</h3><p>Ongoing monitoring, updates, and enhancements so your software keeps performing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section id="case">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>AI implementation in action</h2>
+      <p>How we put AI to work solving a real, everyday billing problem.</p>
+    </div>
+    <div class="case reveal">
+      <div>
+        <div class="tagline">MeterBot · AI billing automation</div>
+        <h3>Fair, per-minute billing for a driver-services operator</h3>
+        <p>A Hyderabad-based driver-and-services operator was losing time and trust to manual billing. Fares were rounded to the nearest half-hour, receipts were handwritten, and disputes over "why am I paying for a full hour?" were common. Drivers spent minutes at the end of every job doing mental math.</p>
+        <p>We implemented an AI-assisted billing engine — MeterBot — that tracks worked time automatically, keeps the first hour as a fair fixed minimum, then bills every additional minute pro-rata. A live "Billed so far" meter ticks up in real time, and each job ends with a clear, itemised receipt in both English and Telugu.</p>
+        <div class="q">"Now customers see exactly what they're paying for, as it happens. The arguments at the end of the trip just stopped."
+          <cite>— Operations lead, driver-services operator (representative engagement)</cite>
+        </div>
+        <div class="stack">
+          <span>Conversational AI</span><span>Automated metering</span><span>Cloud backend</span><span>WhatsApp</span><span>Telugu localisation</span>
+        </div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><div class="v">Fewer</div><div class="k">end-of-trip billing disputes</div></div>
+        <div class="metric"><div class="v">Live</div><div class="k">per-minute transparency</div></div>
+        <div class="metric"><div class="v">2 langs</div><div class="k">English &amp; Telugu receipts</div></div>
+        <div class="metric"><div class="v">0</div><div class="k">manual calculations</div></div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:.82rem;margin-top:18px">Representative implementation. Outcomes illustrate the impact of the approach and may vary by deployment.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="sec-tint">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><span class="dot"></span>Why Varniks Global</span>
+      <h2>Products and people you can rely on</h2>
+      <p>We combine ready-made automation with hands-on engineering — so you get results fast, and a partner for the long run.</p>
+    </div>
+    <div class="strip">
+      <div class="b reveal"><div class="n">Fair</div><div class="l">Transparent, per-minute billing by design</div></div>
+      <div class="b reveal"><div class="n">Local</div><div class="l">Multilingual, built for your market</div></div>
+      <div class="b reveal"><div class="n">Fast</div><div class="l">From idea to live, in weeks not months</div></div>
+      <div class="b reveal"><div class="n">Scalable</div><div class="l">Cloud-native and ready to grow</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow"><span class="dot"></span>About us</span>
+      <h2>Global engineering, built around your business</h2>
+      <p>Varniks Global is a technology company building intelligent automation products and delivering custom software and IT consulting. We help businesses replace manual, error-prone work with tools that are accurate, fair, and easy to use.</p>
+      <p>Our products — like LocalBot and MeterBot — grow out of real problems we've seen on the ground, and our consulting practice puts that same engineering depth to work on your ideas.</p>
+    </div>
+    <div class="reveal val-list">
+      <div class="val"><h4>Fairness first</h4><p>Software that treats customers honestly — right down to the last minute billed.</p></div>
+      <div class="val"><h4>Built to last</h4><p>Clean architecture and maintainable code, not shortcuts.</p></div>
+      <div class="val"><h4>Human + AI</h4><p>Automation that assists people, in the language they actually use.</p></div>
+      <div class="val"><h4>True partnership</h4><p>We stay involved from first idea through launch and beyond.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec-cream">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div>
+        <h2>Let's build something</h2>
+        <p class="sub">Tell us about your business or the process you'd like to automate. We'll get back to you shortly.</p>
+        <div class="cinfo">
+          <a href="mailto:hello@varniksglobal.com">
+            <span class="ci-ic">✉️</span>
+            <span><span class="ci-l">Email</span><br><span class="ci-v">hello@varniksglobal.com</span></span>
+          </a>
+          <a href="tel:+918142919919">
+            <span class="ci-ic">📞</span>
+            <span><span class="ci-l">Phone</span><br><span class="ci-v">+91 81429 19919</span></span>
+          </a>
+          <div class="ci">
+            <span class="ci-ic">📍</span>
+            <span><span class="ci-l">Office</span><br><span class="ci-v">#405, Level 4, My Space Weave, S.No. 322(P),<br>Puppalaguda, Financial District,<br>Hyderabad, Telangana, India – 500089</span></span>
+          </div>
+          <div class="ci">
+            <span class="ci-ic">🧾</span>
+            <span><span class="ci-l">GST</span><br><span class="ci-v">36ABAFV1261F1ZF</span></span>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" onsubmit="return handleSubmit(event)" action="mailto:hello@varniksglobal.com" method="post" enctype="text/plain">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required></div>
+        <div class="field"><label for="msg">How can we help?</label><textarea id="msg" name="message" placeholder="Tell us about your project or which product you're interested in…" required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send message</button>
+        <p class="form-note" id="formNote">Sending opens your email app addressed to hello@varniksglobal.com. To capture leads automatically, point the form's <code>action</code> at a form service such as Formspree.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a href="#top" class="logo on-dark"><span class="mark">V</span><span><b>Varniks</b> <span class="g">Global</span></span></a>
+        <p>Intelligent automation products and IT consulting &amp; development for businesses that want to move faster.</p>
+        <div class="addr">#405, Level 4, My Space Weave, S.No. 322(P), Puppalaguda, Financial District, Hyderabad, Telangana, India – 500089</div>
+        <div class="gst">GSTIN: 36ABAFV1261F1ZF</div>
+      </div>
+      <div>
+        <h5>Products</h5>
+        <a href="#products">LocalBot</a>
+        <a href="#products">MeterBot</a>
+        <a href="#products">Custom bots</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#services">Services</a>
+        <a href="#case">Case study</a>
+        <a href="#about">About</a>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <a href="mailto:hello@varniksglobal.com">hello@varniksglobal.com</a>
+        <a href="tel:+918142919919">+91 81429 19919</a>
+        <a href="#contact">Request a callback</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Varniks Global. All rights reserved.</span>
+      <span>varniksglobal.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var menuBtn=document.getElementById('menuBtn');var body=document.body;
+  function setMenu(open){body.classList.toggle('mobile-open',open);if(menuBtn)menuBtn.setAttribute('aria-expanded',open?'true':'false');}
+  if(menuBtn){menuBtn.addEventListener('click',function(){setMenu(!body.classList.contains('mobile-open'));});}
+  document.querySelectorAll('#navlinks a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+
+  // Reveal on scroll (progressive enhancement — content is visible by default without JS)
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+
+  // Billing demo — worked time and billed amount tick together, consistently (labeled "Demo" in the UI)
+  (function(){
+    var t=document.getElementById('tick'), w=document.getElementById('worked');
+    if(!t||!w)return;
+    var base=1000, rate=1000/60, worked=60;
+    function fmt(m){var h=Math.floor(m/60), mm=m%60;return h+'h '+(mm<10?'0':'')+mm+'m';}
+    setInterval(function(){
+      worked+=1; if(worked>95){worked=60;}
+      var amt=Math.round(Math.max(base, base+(worked-60)*rate));
+      w.textContent=fmt(worked);
+      t.textContent='₹'+amt.toLocaleString('en-IN');
+    },900);
+  })();
+
+  // Contact form — opens the visitor's email client pre-filled so enquiries are never lost.
+  // Replace the mailto flow with a form-service endpoint (e.g. Formspree) to capture leads automatically.
+  function handleSubmit(e){
+    e.preventDefault();
+    var f=e.target;
+    var nm=(f.name.value||'').trim(), em=(f.email.value||'').trim(), ms=(f.message.value||'').trim();
+    var subject=encodeURIComponent('Enquiry from '+(nm||'website visitor')+' — Varniks Global');
+    var bodyLines='Name: '+nm+'\r\nEmail: '+em+'\r\n\r\n'+ms;
+    window.location.href='mailto:hello@varniksglobal.com?subject='+subject+'&body='+encodeURIComponent(bodyLines);
+    var note=document.getElementById('formNote');
+    note.textContent='Opening your email app… if nothing happens, email hello@varniksglobal.com directly.';
+    note.style.color='#F47235';
+    return false;
+  }
+</script>
+</body>
+</html>
